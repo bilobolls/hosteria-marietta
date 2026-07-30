@@ -1,0 +1,430 @@
+/* =========================================
+   1. RESET BÁSICO Y TIPOGRAFÍA
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================
+   2. ENCABEZADO Y MENÚ (Header)
+========================================= */
+header {
+    background-color: transparent; /* ¡Clave! Hacemos que de entrada sea transparente */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.4s ease; /* Le da un efecto suave cuando cambie de color */
+}
+
+/* Esta clase se la vamos a agregar con JavaScript cuando el usuario baje */
+header.scrolled {
+    background-color: rgba(30, 30, 30, 0.95); /* Color oscuro para que se lea en el resto de la web */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-transform: uppercase; /* Pone todo en mayúsculas para más presencia */
+    font-weight: bold;
+    color: white;
+    
+    /* Efecto "Logo" */
+    border: 2px solid white; /* Recuadro blanco */
+    padding: 10px 20px; /* Espacio adentro del recuadro */
+    background-color: rgba(0, 0, 0, 0.4); /* Un fondito oscuro propio para que despegue del fondo */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    
+    /* Pequeña transición por si querés que haga algo al pasar el mouse */
+    transition: all 0.3s ease;
+}
+
+/* Opcional: Un efecto dorado al pasar el mouse por encima del logo */
+header h1:hover {
+    border-color: #d4af37;
+    color: #d4af37;
+    cursor: default;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Sombrita para que los textos se lean bien sobre cualquier foto */
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+/* =========================================
+   2.b MENÚ HAMBURGUESA (Celulares)
+========================================= */
+.menu-toggle {
+    display: none; /* Lo ocultamos en computadoras */
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Cuando la pantalla es menor a 768px, aplicamos estos cambios */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostramos las 3 rayitas */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Apila los botones de arriba hacia abajo */
+        position: absolute;
+        top: 68px; /* Justo debajo de la barra oscura */
+        left: -100%; /* Lo escondemos fuera de la pantalla por la izquierda */
+        width: 100%;
+        background-color: rgba(30, 30, 30, 0.98);
+        text-align: center;
+        padding: 30px 0;
+        transition: left 0.3s ease; /* Efecto suave de deslizamiento */
+    }
+
+    /* Esta clase se la vamos a agregar con JavaScript al hacer clic */
+    nav ul.activo {
+        left: 0; /* Trae el menú al centro de la pantalla */
+    }
+
+    nav ul li {
+        margin: 20px 0; /* Da más espacio entre los botones para tocar fácil con el dedo */
+    }
+}
+
+/* =========================================
+   3. SECCIÓN INICIO (Hero Image)
+========================================= */
+#inicio {
+    height: 100vh; 
+    
+    /* Suavizamos el filtro oscuro (de 0.6 a 0.2) para que la foto se vea clara como en tu ejemplo.
+       CAMBIÁ "portada.jpg" POR EL NOMBRE DE LA FOTO QUE QUIERAS USAR DE FONDO */
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('foto portada.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+#inicio h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    
+    /* Forzamos a que este título en particular sea blanco */
+    color: white; 
+    padding-bottom: 0; 
+}
+
+/* Le sacamos la línea dorada SOLO a este título para que la foto quede limpia */
+#inicio h2::after {
+    display: none;
+};
+
+
+#inicio p {
+    font-size: 22px;
+    font-weight: 300;
+    max-width: 700px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+/* =========================================
+   4. ESPACIADOS Y TÍTULOS GENERALES
+========================================= */
+/* Espacio general de cada bloque */
+section {
+    padding: 80px 20px;
+    background-color: white; /* Aseguramos fondo blanco limpio */
+}
+
+/* Estilo unificado para los títulos ("Nuestro Departamento", "Servicios") */
+section h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 60px; /* Da un buen respiro antes de las fotos/cajas */
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Estilo unificado para los títulos ("Nuestro Departamento", "Servicios") */
+section h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 50px; 
+}
+
+/* =========================================
+   5. SECCIÓN DEPARTAMENTO (Galería)
+========================================= */
+#departamento {
+    background-color: #f9f9f9;
+}
+
+
+
+/* Contenedor central para el departamento único */
+.contenedor-habitaciones {
+    max-width: 900px; /* Lo hacemos más ancho porque es la estrella de la página */
+    margin: 0 auto;
+}
+
+.tarjeta-habitacion {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-habitacion:hover {
+    transform: translateY(-5px); /* Un salto más sutil */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* --- ESTILOS DE LA GALERÍA --- */
+.contenedor-imagen-principal {
+    width: 100%;
+    height: 450px; /* Imagen principal bien grande */
+    overflow: hidden;
+}
+
+.contenedor-imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.thumbnails-habitacion {
+    display: flex;
+    gap: 2px; /* Separador sutil entre fotos */
+    background-color: #fff;
+}
+
+.thumbnails-habitacion .thumb {
+    width: 20%; /* Exactamente 20% para que entren las 5 fotos perfecto */
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.5; /* Más opacas para que resalte la activa */
+    transition: opacity 0.3s ease;
+}
+
+.thumbnails-habitacion .thumb:hover {
+    opacity: 0.8;
+}
+
+.thumbnails-habitacion .thumb.active {
+    opacity: 1;
+    border-bottom: 4px solid #d4af37; /* Una línea dorada abajo en lugar de un recuadro */
+}
+
+/* Textos de la tarjeta */
+.info-habitacion {
+    padding: 35px;
+    text-align: left;
+}
+
+.info-habitacion h3 {
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.info-habitacion p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   6. SECCIÓN SERVICIOS
+========================================= */
+#servicios {
+    background-color: white;
+    padding-top: 5px; /* Reducimos drásticamente el espacio arriba del título */
+}
+
+#servicios h2 {
+    margin-bottom: 20px; /* Achicamos el espacio entre el título y las cajas */
+}
+
+.subtitulo-servicios {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.contenedor-servicios {
+    display: grid;
+    /* Crea columnas automáticas. Mínimo 250px, máximo lo que dé la pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caja-servicio {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.caja-servicio:hover {
+    transform: translateY(-5px);
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Estilo para los íconos de FontAwesome */
+.caja-servicio i {
+    font-size: 40px;
+    color: #d4af37; /* El mismo dorado de los botones */
+    margin-bottom: 20px;
+}
+
+.caja-servicio h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.caja-servicio p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   7. PIE DE PÁGINA (Footer) Y MAPA
+========================================= */
+footer {
+    background-color: #1e1e1e; /* Fondo oscuro elegante */
+    color: white;
+    padding: 60px 20px 20px;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que el mapa baje en pantallas de celular */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.info-contacto {
+    flex: 1; /* Ocupa la mitad del espacio */
+    min-width: 300px; /* Asegura que no se rompa en celulares */
+}
+
+.info-contacto h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #d4af37; /* Dorado */
+}
+
+.info-contacto p {
+    margin-bottom: 25px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.info-contacto ul {
+    list-style: none;
+}
+
+.info-contacto ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #eee;
+}
+
+.info-contacto ul li i {
+    font-size: 20px;
+    color: #d4af37; /* Iconos dorados */
+}
+
+.mapa-footer {
+    flex: 1; /* Ocupa la otra mitad del espacio */
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden; /* Corta las esquinas del mapa para que queden redondeadas */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333; /* Una línea sutil de separación */
+    color: #888;
+    font-size: 14px;
+}
+
+/* =========================================
+   8. BOTÓN FLOTANTE WHATSAPP
+========================================= */
+.btn-whatsapp-flotante {
+    position: fixed; /* Se queda quieto aunque bajes en la página */
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366; /* Verde oficial de WhatsApp */
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-whatsapp-flotante:hover {
+    background-color: #128c7e; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.1); /* Efecto de agrandado */
+    color: white;
+}

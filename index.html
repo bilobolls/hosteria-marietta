@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Etiquetas SEO fundamentales para aparecer en Google -->
+    <title>Apart Hotel Hostería Marietta | Alojamiento en La Cesira</title>
+    <meta name="description" content="Vení a descansar a Hostería Marietta en La Cesira. Apartamento completo, excelente ubicación y la mejor atención. ¡Reservá tu estadía hoy!">
+    
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+</head>
+<body>
+
+    <!-- Encabezado y Menú de navegación -->
+   <!-- Encabezado y Menú de navegación -->
+    <header>
+        <h1>Hostería Marietta</h1>
+        
+        <!-- Botón hamburguesa (Solo se verá en celulares) -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul id="menu-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#departamento">El Departamento</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestro pedacito de paraíso</h2>
+            <p>Descubrí el lugar ideal para tu próxima estadía en La Cesira.</p>
+        </section>
+
+        <!-- Sección del Departamento (Única tarjeta con galería) -->
+        <section id="departamento">
+            <h2>Nuestro Departamento</h2>
+            
+            <div class="contenedor-habitaciones">
+                <div class="tarjeta-habitacion galeria">
+                    
+                    <!-- Imagen Grande -->
+                    <div class="contenedor-imagen-principal">
+                        <img src="foto portada.jpg" alt="Fachada del departamento" id="imagen-principal-1">
+                    </div>
+                    
+                    <!-- 5 Miniaturas de los ambientes -->
+                    <div class="thumbnails-habitacion">
+                        <img src="foto portada.jpg" alt="Fachada" class="thumb active">
+                        <img src="foto 1.jpg" alt="Cocina completa" class="thumb">
+                        <img src="foto 2.jpg" alt="Comedor luminoso" class="thumb">
+                        <img src="foto 3.jpg" alt="Habitación principal" class="thumb">
+                        <img src="foto 4.jpg" alt="Baño" class="thumb">
+                    </div>
+
+                    <div class="info-habitacion">
+                        <h3>Departamento Completo</h3>
+                        <p>Totalmente equipado para tu comodidad. Cuenta con cocina completa, comedor, habitaciones confortables, patio con asador, baño privado y excelente ubicación. Ideal para sentirte como en casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section id="servicios">
+            <h2>Comodidades y Servicios</h2>
+            
+            
+            <div class="contenedor-servicios">
+                <!-- Servicio 1 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-bed"></i>
+                    <h3>Descanso Ideal</h3>
+                    <p>2 habitaciones con opciones de 4 a 6 camas. Incluye ropa blanca (sábanas y toallones).</p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <h3>Cocina Completa</h3>
+                    <p>Totalmente equipada con heladera, vajilla y todo lo necesario para cocinar.</p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <h3>Desayuno Incluido</h3>
+                    <p>Te ofrecemos desayuno para que arranques el día de la mejor manera.</p>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-fire"></i>
+                    <h3>Patio y Asador</h3>
+                    <p>Disfrutá al aire libre con nuestro patio privado equipado con asador y parrilla.</p>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3>Conectividad y TV</h3>
+                    <p>Conexión Wi-Fi en todo el departamento y televisión por cable.</p>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-car"></i>
+                    <h3>Cochera</h3>
+                    <p>Estacionamiento privado para que dejes tu vehículo con total seguridad.</p>
+                </div>
+
+                <!-- Servicio 7 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-rainbow"></i>
+                    <h3>LGBTQ+ Friendly</h3>
+                    <p>Somos un espacio seguro, inclusivo, amigable y libre de discriminación.</p>
+                </div>
+
+                <!-- Servicio 8 -->
+                <div class="caja-servicio">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h3>Normas de la Casa</h3>
+                    <p>Para cuidar el espacio de todos, no aceptamos mascotas y solo se permite fumar en el patio.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+   <!-- Pie de página con contacto y mapa -->
+    <footer id="contacto">
+        <div class="contenedor-footer">
+            
+            <div class="info-contacto">
+                <h2>Contactanos</h2>
+                <p>¿Tenés alguna duda o querés consultar disponibilidad? Escribinos y te respondemos a la brevedad.</p>
+                <ul>
+                    <!-- Iconos usando la librería FontAwesome que agregamos antes -->
+                    <li><i class="fa-solid fa-location-dot"></i> Córdoba 123, La Cesira, Córdoba</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +54 9 3382 670375</li>
+                    <li><i class="fa-regular fa-envelope"></i> email@hosteriamarietta.com</li>
+                </ul>
+            </div>
+
+            <div class="mapa-footer">
+                <!-- Mapa de Google Maps (Está centrado en La Cesira por defecto) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106670.6277252033!2d-62.99042531601004!3d-33.91689233069145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c898c61bd117eb%3A0xc3dd6c321855a9ec!2sLa%20Cesira%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Apart Hotel Hostería Marietta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp (Queda siempre fijo en la esquina) -->
+    <!-- En el enlace (href), cambiá los ceros por el número real con código de país (54) y área (9) -->
+    <a href="https://wa.me/5493382670375?text=¡Hola!%20Me%20gustaría%20consultar%20por%20el%20departamento." class="btn-whatsapp-flotante" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
+   
