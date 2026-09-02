@@ -219,14 +219,14 @@ section h2 {
 /* --- ESTILOS DE LA GALERÍA --- */
 .contenedor-imagen-principal {
     width: 100%;
-    height: 450px; /* Imagen principal bien grande */
+    aspect-ratio: 5 / 4; /* ¡La magia! La caja toma la proporción exacta de tus fotos */
     overflow: hidden;
 }
 
 .contenedor-imagen-principal img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ahora podés usar cover tranquilo, al ser de la misma proporción no recorta nada */
     display: block;
 }
 
