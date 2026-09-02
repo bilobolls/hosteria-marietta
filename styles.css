@@ -197,7 +197,7 @@ section h2 {
 
 /* Contenedor central para el departamento único */
 .contenedor-habitaciones {
-    max-width: 900px; /* Lo hacemos más ancho porque es la estrella de la página */
+    max-width: 800px; /* Lo hacemos más ancho porque es la estrella de la página */
     margin: 0 auto;
 }
 
