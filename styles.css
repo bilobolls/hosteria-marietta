@@ -232,19 +232,19 @@ section h2 {
 
 .thumbnails-habitacion {
     display: flex;
-    gap: 2px; /* Separador sutil entre fotos */
+    flex-wrap: wrap; /* ¡Clave! Permite que las fotos bajen a armar una segunda fila */
+    gap: 2px; 
     background-color: #fff;
 }
 
 .thumbnails-habitacion .thumb {
-    width: 20%; /* Exactamente 20% para que entren las 5 fotos perfecto */
+    width: calc(25% - 2px); /* Toma la cuarta parte del ancho para meter 4 fotos por fila */
     height: 80px;
     object-fit: cover;
     cursor: pointer;
-    opacity: 0.5; /* Más opacas para que resalte la activa */
+    opacity: 0.5; 
     transition: opacity 0.3s ease;
 }
-
 .thumbnails-habitacion .thumb:hover {
     opacity: 0.8;
 }
