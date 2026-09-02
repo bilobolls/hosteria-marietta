@@ -237,13 +237,22 @@ section h2 {
     background-color: #fff;
 }
 
+/* --- EN COMPUTADORA: 8 fotos en 1 sola fila --- */
 .thumbnails-habitacion .thumb {
-    width: calc(25% - 2px); /* Toma la cuarta parte del ancho para meter 4 fotos por fila */
-    height: 80px;
+    width: calc(12.5% - 2px); /* 100% dividido 8 fotos = 12.5% */
+    height: 90px; /* Las hacemos un poquitito más altas para que queden mejor proporcionadas */
     object-fit: cover;
     cursor: pointer;
     opacity: 0.5; 
     transition: opacity 0.3s ease;
+}
+
+/* --- EN CELULAR: 4 fotos por fila (2 renglones) --- */
+@media (max-width: 768px) {
+    .thumbnails-habitacion .thumb {
+        width: calc(25% - 2px); /* 100% dividido 4 fotos = 25% */
+        height: 80px;
+    }
 }
 .thumbnails-habitacion .thumb:hover {
     opacity: 0.8;
