@@ -217,19 +217,21 @@ section h2 {
 }
 
 /* --- ESTILOS DE LA GALERÍA --- */
+/* --- EN COMPUTADORA: Altura controlada --- */
 .contenedor-imagen-principal {
     width: 100%;
-    aspect-ratio: 5 / 4; /* ¡La magia! La caja toma la proporción exacta de tus fotos */
-    overflow: hidden;
+    height: 450px; /* Le ponemos un "freno" a la altura para que no invada la pantalla */
+    background-color: white; /* Si sobra espacio a los lados, se mezcla con la tarjeta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-imagen-principal img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ahora podés usar cover tranquilo, al ser de la misma proporción no recorta nada */
-    display: block;
+    object-fit: contain; /* La foto entra entera sin cortarse nunca, centrándose prolija */
 }
-
 .thumbnails-habitacion {
     display: flex;
     flex-wrap: wrap; /* ¡Clave! Permite que las fotos bajen a armar una segunda fila */
