@@ -440,3 +440,16 @@ footer {
         padding: 15px 20px;    /* Reduce los márgenes laterales del encabezado */
     }
 }
+/* --- Ajuste del Título Principal (Hero) para Celulares --- */
+@media (max-width: 768px) {
+    #inicio h2 {
+        font-size: 32px; /* Achicamos la letra a casi la mitad */
+        line-height: 1.2; /* Juntamos un poquito los renglones */
+        padding-top: 50px; /* Le damos un poco de aire arriba para que no quede pegado al menú */
+    }
+    
+    #inicio p {
+        font-size: 18px; /* Achicamos un poco también el texto de abajo para que quede proporcionado */
+        padding: 0 15px; /* Le damos un pequeño margen a los costados para que no toque los bordes del celular */
+    }
+}
