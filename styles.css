@@ -464,3 +464,21 @@ footer {
         padding: 0 15px; /* Le damos un pequeño margen a los costados para que no toque los bordes del celular */
     }
 }
+.btn-como-llegar {
+    display: block;
+    background-color: #d4af37; /* El tono dorado que usaste en los íconos */
+    color: #1e1e1e;
+    text-align: center;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-como-llegar:hover {
+    background-color: #b5952f;
+    transform: translateY(-2px);
+}
