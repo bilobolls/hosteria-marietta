@@ -122,7 +122,7 @@ nav ul li a:hover {
     
     /* Suavizamos el filtro oscuro (de 0.6 a 0.2) para que la foto se vea clara como en tu ejemplo.
        CAMBIÁ "portada.jpg" POR EL NOMBRE DE LA FOTO QUE QUIERAS USAR DE FONDO */
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('foto portada.jpg');
+   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('foto portada.jpeg');
     
     background-size: cover;
     background-position: center;
