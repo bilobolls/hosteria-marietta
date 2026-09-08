@@ -462,7 +462,7 @@ footer {
 /* --- Ajuste del Título Principal (Hero) para Celulares --- */
 @media (max-width: 768px) {
     #inicio {
-        background-image: url('foto-portada-movil.jpeg'); /* El celular carga su propia foto vertical */
+        background-image: url('foto-portada-celular.jpeg'); /* El celular carga su propia foto vertical */
         height: 100vh;
         justify-content: flex-start; 
         padding-top: 100px; 
