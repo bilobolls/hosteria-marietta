@@ -121,13 +121,13 @@ nav ul li a:hover {
     height: 100vh;
     background-image: url('foto portada.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: center 30%; /* El 30% mueve la foto un poquito hacia abajo para mostrar más cielo */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Obliga al texto a empezar desde arriba */
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    padding-top: 200px; /* Baja el texto para que no se choque con el menú negro */
+    padding-top: 60px; /* ¡Acá estaba el problema! Lo bajamos de 200 a 60 para que abrace el menú superior */
     padding-left: 20px;
     padding-right: 20px;
 }
