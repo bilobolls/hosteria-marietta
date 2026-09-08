@@ -139,15 +139,7 @@ nav ul li a:hover {
     margin-bottom: 5px;
     margin-top: -30vh; /* Subimos el número de 15 a 30 para elevar todo el conjunto hacia el cielo */
 }
-.subtitulo-limpio {
-    font-family: 'Segoe UI', sans-serif;
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.2;
-    margin: 0;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Esto ayuda a que el blanco resalte más */
-}
+
 /* Las líneas blancas a los costados */
 .titulo-con-lineas .linea {
     width: 60px; /* Largo de la línea */
@@ -468,18 +460,29 @@ footer {
 }
 /* --- Ajuste del Título Principal (Hero) para Celulares --- */
 @media (max-width: 768px) {
-    #inicio h2 {
-        font-size: 32px; /* Achicamos la letra a casi la mitad */
-        line-height: 1.2; /* Juntamos un poquito los renglones */
-        padding-top: 50px; /* Le damos un poco de aire arriba para que no quede pegado al menú */
-       .marietta-cursiva { font-size: 45px; }
-.subtitulo-limpio { font-size: 24px; }
-.titulo-con-lineas .linea { width: 40px; }
+    /* Manda el contenido arriba y le da espacio al menú negro */
+    #inicio {
+        justify-content: flex-start; 
+        padding-top: 160px; 
     }
     
-    #inicio p {
-        font-size: 18px; /* Achicamos un poco también el texto de abajo para que quede proporcionado */
-        padding: 0 15px; /* Le damos un pequeño margen a los costados para que no toque los bordes del celular */
+    /* Limpiamos el margen negativo viejo */
+    .titulo-con-lineas {
+        margin-top: 0; 
+        margin-bottom: 5px;
+    }
+    
+    .marietta-cursiva { 
+        font-size: 45px; 
+    }
+    
+    .subtitulo-limpio { 
+        font-size: 22px; 
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Para que resalte perfecto en el azul */
+    }
+    
+    .titulo-con-lineas .linea { 
+        width: 40px; 
     }
 }
 .btn-como-llegar {
