@@ -462,7 +462,7 @@ footer {
 /* --- Ajuste del Título Principal (Hero) para Celulares --- */
 @media (max-width: 768px) {
     #inicio {
-        height: 75vh; /* Achicamos la altura para que el zoom sea menor y se vean los costados */
+        height: 55vh; /* Achicamos la altura para que el zoom sea menor y se vean los costados */
         justify-content: flex-start; 
         padding-top: 100px; 
         background-position: center bottom; 
