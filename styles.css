@@ -119,19 +119,14 @@ nav ul li a:hover {
 ========================================= */
 #inicio {
     height: 100vh; 
-    
-    /* Suavizamos el filtro oscuro (de 0.6 a 0.2) para que la foto se vea clara como en tu ejemplo.
-       CAMBIÁ "portada.jpg" POR EL NOMBRE DE LA FOTO QUE QUIERAS USAR DE FONDO */
-   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('foto portada.jpeg');
-    
+    background-image: url('foto portada.jpeg'); /* Fondo 100% limpio, sin sombras */
     background-size: cover;
-    background-position: center;
+    background-position: top center; /* Enfoca la parte de arriba de la foto (el cielo) */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
     padding: 0 20px;
 }
 
