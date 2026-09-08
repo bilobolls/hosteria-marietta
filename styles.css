@@ -130,15 +130,24 @@ nav ul li a:hover {
     padding: 0 20px;
 }
 /* Contenedor de la palabra Marietta y las líneas */
+
 .titulo-con-lineas {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Separación entre las líneas y la palabra */
+    gap: 15px; 
     margin-bottom: 5px;
-    margin-top: -15vh; /* Sube los textos hacia el cielo azul, como en la foto */
+    margin-top: -30vh; /* Subimos el número de 15 a 30 para elevar todo el conjunto hacia el cielo */
 }
-
+.subtitulo-limpio {
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Esto ayuda a que el blanco resalte más */
+}
 /* Las líneas blancas a los costados */
 .titulo-con-lineas .linea {
     width: 60px; /* Largo de la línea */
