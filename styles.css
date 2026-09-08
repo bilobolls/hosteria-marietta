@@ -129,31 +129,42 @@ nav ul li a:hover {
     text-align: center;
     padding: 0 20px;
 }
-
-#inicio h2 {
-    font-size: 56px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    
-    /* Forzamos a que este título en particular sea blanco */
-    color: white; 
-    padding-bottom: 0; 
+/* Contenedor de la palabra Marietta y las líneas */
+.titulo-con-lineas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Separación entre las líneas y la palabra */
+    margin-bottom: 5px;
+    margin-top: -15vh; /* Sube los textos hacia el cielo azul, como en la foto */
 }
 
-/* Le sacamos la línea dorada SOLO a este título para que la foto quede limpia */
-#inicio h2::after {
-    display: none;
-};
-
-
-#inicio p {
-    font-size: 22px;
-    font-weight: 300;
-    max-width: 700px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+/* Las líneas blancas a los costados */
+.titulo-con-lineas .linea {
+    width: 60px; /* Largo de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: white;
 }
+
+/* La palabra Marietta en cursiva */
+.marietta-cursiva {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+/* La frase de abajo */
+.subtitulo-limpio {
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
 /* =========================================
    4. ESPACIADOS Y TÍTULOS GENERALES
 ========================================= */
@@ -452,6 +463,9 @@ footer {
         font-size: 32px; /* Achicamos la letra a casi la mitad */
         line-height: 1.2; /* Juntamos un poquito los renglones */
         padding-top: 50px; /* Le damos un poco de aire arriba para que no quede pegado al menú */
+       .marietta-cursiva { font-size: 45px; }
+.subtitulo-limpio { font-size: 24px; }
+.titulo-con-lineas .linea { width: 40px; }
     }
     
     #inicio p {
