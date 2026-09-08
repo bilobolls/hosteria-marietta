@@ -121,7 +121,7 @@ nav ul li a:hover {
     height: 100vh; 
     background-image: url('foto portada.jpeg'); /* Fondo 100% limpio, sin sombras */
     background-size: cover;
-    background-position: top center; /* Enfoca la parte de arriba de la foto (el cielo) */
+    background-position: center; /* Enfoca la parte de arriba de la foto (el cielo) */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -464,6 +464,7 @@ footer {
     #inicio {
         justify-content: flex-start; 
         padding-top: 160px; 
+       background-position: top center;
     }
     
     /* Limpiamos el margen negativo viejo */
