@@ -118,16 +118,16 @@ nav ul li a:hover {
    3. SECCIÓN INICIO (Hero Image)
 ========================================= */
 #inicio {
-    height: 100vh;
+    height: 85vh; /* Bajamos de 100vh a 85vh. Al ser menos alta, recorta menos la foto */
     background-image: url('foto portada.jpeg');
     background-size: cover;
-    background-position: center bottom; /* El 30% mueve la foto un poquito hacia abajo para mostrar más cielo */
+    background-position: center 60%; /* El punto dulce: reparte el recorte entre el cielo y el pasto */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    padding-top: 60px; /* ¡Acá estaba el problema! Lo bajamos de 200 a 60 para que abrace el menú superior */
+    padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
 }
