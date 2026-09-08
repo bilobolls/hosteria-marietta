@@ -121,7 +121,7 @@ nav ul li a:hover {
     height: 100vh;
     background-image: url('foto portada.jpeg');
     background-size: cover;
-    background-position: center 30%; /* El 30% mueve la foto un poquito hacia abajo para mostrar más cielo */
+    background-position: center bottom; /* El 30% mueve la foto un poquito hacia abajo para mostrar más cielo */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
