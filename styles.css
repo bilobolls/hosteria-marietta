@@ -118,26 +118,27 @@ nav ul li a:hover {
    3. SECCIÓN INICIO (Hero Image)
 ========================================= */
 #inicio {
-    height: 100vh; 
-    background-image: url('foto portada.jpeg'); /* Fondo 100% limpio, sin sombras */
+    height: 100vh;
+    background-image: url('foto portada.jpeg');
     background-size: cover;
-    background-position: center; /* Enfoca la parte de arriba de la foto (el cielo) */
+    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Obliga al texto a empezar desde arriba */
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding-top: 200px; /* Baja el texto para que no se choque con el menú negro */
+    padding-left: 20px;
+    padding-right: 20px;
 }
-/* Contenedor de la palabra Marietta y las líneas */
 
 .titulo-con-lineas {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; 
+    gap: 15px;
     margin-bottom: 5px;
-    margin-top: -30vh; /* Subimos el número de 15 a 30 para elevar todo el conjunto hacia el cielo */
+    margin-top: 0; /* Limpiamos cualquier margen negativo anterior */
 }
 
 /* Las líneas blancas a los costados */
