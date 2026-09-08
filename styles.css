@@ -461,12 +461,14 @@ footer {
 }
 /* --- Ajuste del Título Principal (Hero) para Celulares --- */
 @media (max-width: 768px) {
-    /* Manda el contenido arriba y le da espacio al menú negro */
     #inicio {
         justify-content: flex-start; 
-        padding-top: 160px; 
-       background-position: top center;
+        padding-top: 100px; /* Reducimos el espacio (antes 160px) para despegar el texto del techo de madera */
+        background-position: center bottom; /* Anclamos la foto al piso para forzar a que se vea el frente de la casa */
     }
+    
+    
+}
     
     /* Limpiamos el margen negativo viejo */
     .titulo-con-lineas {
