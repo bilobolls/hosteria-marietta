@@ -468,6 +468,24 @@ footer {
         padding-top: 100px; 
         background-position: 10% bottom; 
     }
+   .clase-de-tu-contenedor { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* Un espacio un poco más chico para que entren bien */
+    }
+
+    .clase-de-tu-tarjeta {
+        padding: 15px 10px; /* Ajustamos el aire interno para que no explote */
+    }
+
+    .clase-de-tu-tarjeta h3 { 
+        font-size: 15px;
+    }
+
+    .clase-de-tu-tarjeta p { 
+        font-size: 13px;
+    }
+}
 }
     
     /* Limpiamos el margen negativo viejo */
