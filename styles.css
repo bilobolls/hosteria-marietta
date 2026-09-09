@@ -509,7 +509,7 @@ footer {
 }
 .medios-pago {
     background-color: #f8f9fa; /* Fondo gris muy clarito */
-    border-left: 4px solid #003366; /* Azul oscuro haciendo juego con tu menú superior */
+    border-left: 4px solid #D4AF37; /* Amarillo mostaza */
     padding: 15px 20px;
     margin: 30px auto;
     max-width: 600px;
@@ -526,6 +526,6 @@ footer {
 }
 
 .medios-pago i {
-    color: #003366;
+    color: #D4AF37; /* Amarillo mostaza para mantener la coherencia */
     margin-right: 8px;
 }
