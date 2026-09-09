@@ -493,7 +493,6 @@ footer {
         line-height: 1.3; /* Juntamos un poco los renglones para ahorrar espacio */
     }
 }
-}
     
     /* Limpiamos el margen negativo viejo */
     .titulo-con-lineas {
@@ -513,7 +512,7 @@ footer {
     .titulo-con-lineas .linea { 
         width: 40px; 
     }
-}
+
 
 .medios-pago {
     background-color: #f8f9fa; /* Fondo gris muy clarito */
