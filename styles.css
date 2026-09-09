@@ -507,3 +507,25 @@ footer {
     background-color: #b5952f;
     transform: translateY(-2px);
 }
+.medios-pago {
+    background-color: #f8f9fa; /* Fondo gris muy clarito */
+    border-left: 4px solid #003366; /* Azul oscuro haciendo juego con tu menú superior */
+    padding: 15px 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.medios-pago p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.medios-pago i {
+    color: #003366;
+    margin-right: 8px;
+}
